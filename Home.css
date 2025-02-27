@@ -1,0 +1,42 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* A warm sunset gradient */
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* New font family */
+    padding: 30px; /* Increased padding for a better look */
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    font-weight: 700; /* Bold header for more impact */
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3); /* Stronger text shadow */
+}
+
+button {
+    background: #ffffff;
+    color: #ff7e5f; /* Soft coral color */
+    font-size: 1.1rem;
+    padding: 16px 35px;
+    border: none;
+    border-radius: 50px; /* Rounded pill-shaped button */
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    width: 260px;
+    text-align: center;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+button:hover {
+    background: #ff7e5f; /* Same coral color */
+    color: #ffffff; /* White text on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}

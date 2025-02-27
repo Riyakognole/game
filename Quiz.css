@@ -1,0 +1,93 @@
+/* Quiz.css */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #00bcd4, #00838f); /* A cool cyan gradient */
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Updated font */
+    padding: 30px; /* More space for the content */
+}
+
+h1 {
+    font-size: 3rem; /* Slightly larger for emphasis */
+    margin-bottom: 25px;
+    font-weight: 700; /* Bold header */
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3); /* Stronger text shadow */
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.2); /* Lighter transparent background */
+    padding: 18px;
+    border-radius: 12px; /* Larger rounded corners */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Larger gap between buttons */
+    width: 100%;
+    max-width: 600px; /* Slightly wider buttons */
+}
+
+.options button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #ffffff;
+    color: #00838f; /* Adjusted text color for contrast */
+    font-size: 1.3rem; /* Increased font size */
+    padding: 14px 24px; /* More padding for a larger button */
+    border: none;
+    border-radius: 10px; /* Larger border radius */
+    cursor: pointer;
+    font-weight: 600; /* Bold text */
+    text-align: left;
+    width: 100%;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.options button:hover {
+    background: #00bcd4; /* Matching cyan color */
+    color: white; /* White text on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Adding numbered options */
+.options button::before {
+    content: attr(data-index) ". ";
+    font-weight: bold;
+    margin-right: 12px;
+    color: #00838f; /* Matching number color */
+}
+
+.navigation-buttons {
+    margin-top: 30px; /* Increased margin */
+    display: flex;
+    gap: 20px; /* Larger gap between buttons */
+}
+
+.navigation-buttons button {
+    background: #ff5722; /* A vibrant orange */
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px; /* Larger padding */
+    border: none;
+    border-radius: 12px; /* More rounded corners */
+    cursor: pointer;
+    font-weight: 600; /* Bold text */
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navigation-buttons button:hover {
+    background: #e64a19; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight scale-up on hover */
+}
